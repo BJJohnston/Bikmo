@@ -13,4 +13,25 @@ function get($url, $file){
 	return $string
 }
 
+function read($path){
+	//opens path
+	$f = fopen($path, 'r');
+	//creates buffer
+	$buffer = '';
+	//until not end of file
+	while (!feof($f)) {
+		//read data
+		$buffer .= fread($f, 2048);
+
+	}
+	//close file
+	fclose($f);
+	//return data
+	return $buffer;
+}
+
+$cache_file = '/cache.page.php';
+$url = 'https://bikmo.com/about-us/our-ethos/';
+
+
 ?>

@@ -30,8 +30,31 @@ function read($path){
 	return $buffer;
 }
 
+//create cache file
 $cache_file = '/cache.page.php';
+//url to cache
 $url = 'https://bikmo.com/about-us/our-ethos/';
 
+//if the cache exists
+if (file_exists($cache_file)){
+	//and time has been 24 hours
+	$time = (time() - fileatime($cache_file));
+	if ($time < 3600 * 24) {
+		//retrieve data
+		$html = read($cache_file);
+	} else {
+		//create new cache
+		$html = get($url, $cache_file);
+	}
+else{
+	//if no cache create one
+	$html = get($url, $cache_file);
+}
+
+}
+//echo the data
+echo $html;
+//finish
+exit;
 
 ?>

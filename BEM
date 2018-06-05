@@ -1,0 +1,16 @@
+BEM
+
+Block, element and modifier. 
+
+
+Our block would be the container of the contact listing so .contact{} for example.
+
+We would have several elements within the Block such as first/last name, contact number, email, possibly a photo?
+
+These elements would be .contact__name, .contact__lastname, .contact__phone, .contact__email, .contact__img.
+
+These elements would then have their own modifiers. Such as .contact__name--large, ..contact__name--blue. Possibly for our image we could have
+.contact__img--large, .contact__img--small
+
+Their could be social media buttons in the contact listing? So we would have a block callec .btn then this button would have elements such as text so .btn__text or 
+.btn__img. Then modifiers .btn--large, .btn--twitter etc.

@@ -1,0 +1,19 @@
+
+Example JSON Response.
+Could be returned after typing in a customers details.
+We can then extract data from this object. 
+
+We'll call this object jim.
+We could access the elements by:
+	$name = jim.Name;
+	$firstBike = jim.Bikes[0];
+{
+	"Name": "Jim",
+	"Age": "24",
+	"Bikes": ["Blue", "Green", "Fast and yellow"],
+	"Contact": "01234567891",
+	"Claims": "2"
+
+}
+
+

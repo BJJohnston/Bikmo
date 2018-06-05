@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>{% block title %}Bikmo Dev Interview{% endblock %}</title>
+</head>
+<body>
+	<div id = "side bar">
+		{% block sidebar %}
+			<ul>
+				<li><a>Home</a></li>
+				<li><a>News</a></li>
+			</ul>
+		{% endblock %}
+	</div>
+	<div id="content">
+		{% block body %}{% endblock %}
+	</div>
+</body>
+<footer></footer>
+</html>

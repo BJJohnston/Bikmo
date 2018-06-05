@@ -8,6 +8,7 @@
 			<ul>
 				<li><a>Home</a></li>
 				<li><a>News</a></li>
+				<li><a>Pictures</a></li>
 			</ul>
 		{% endblock %}
 	</div>
@@ -15,5 +16,7 @@
 		{% block body %}{% endblock %}
 	</div>
 </body>
-<footer></footer>
+<footer>
+	{% block footer %}<p>copyright</p>{% endblock %}
+</footer>
 </html>

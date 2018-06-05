@@ -1,0 +1,12 @@
+//inherits from base
+{% extends 'news.html.twig' %}
+
+//overwrites parent 'method'
+{% block title %}News and pictures!{% endblock%}
+
+//overwrites parent 'method' and creates a new news post
+{% block body %}
+<h1>Heres the news</h1>
+<p>Some news</p>
+<img src="">
+{% endblock %}
